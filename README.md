@@ -13,7 +13,7 @@ Aplikasi pencatatan belanja yang membantu Anda mengelola daftar belanja dengan m
    - Kelompokkan item berdasarkan alfabet
    - Filter item berdasarkan status (dibeli/belum dibeli)
 
-### 3. **Tracking & Analitik*
+### 3. **Tracking & Analitik**
    - Catat jumlah barang
    - Kalkulasi banyaknya barang yang telah dibeli/dicoret
    - Persentase atas barang yang telah dibeli/dicoret
@@ -27,7 +27,7 @@ Aplikasi pencatatan belanja yang membantu Anda mengelola daftar belanja dengan m
 
 ### Frontend
 - **JavaScript (ES6+)** - Logika aplikasi dan interaktivitas
-- **React Js + Vite** - UI Responsive Library
+- **React Js** - UI Responsive Library
 
 ### Tools & Libraries
 - **Local Storage API** - Penyimpanan data lokal
