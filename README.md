@@ -1,38 +1,48 @@
-# Catatan Belanja
+# Catatan Belanja 🛒
 
-## Overview
-This project is designed to help users manage their shopping lists efficiently. It allows users to add, edit, delete, and view their shopping items in a user-friendly interface.
+Aplikasi pencatatan belanja yang membantu Anda mengelola daftar belanja dengan mudah dan efisien.
 
-## Features
-- **User Authentication:** Users can register and log in to manage their personal shopping lists.
-- **Add Shopping Items:** Users can easily add items to their shopping list with details like name, quantity, and price.
-- **Edit Items:** Users can modify existing items if their needs change.
-- **Delete Items:** Users can remove items from their shopping list.
-- **View List:** Users can view all items in their shopping list in a clear and organized manner.
-- **Search Functionality:** Users can search for items in their list quickly.
+## 📋 Fitur Utama
 
-## Frameworks and Technologies
-- **Frontend:** Built with React for a responsive UI.
-- **Backend:** Node.js and Express.js for handling API requests.
-- **Database:** MongoDB for storing user and item data.
+### 1. **Manajemen Daftar Belanja**
+   - Tambah item belanja baru
+   - Hapus item dari daftar (Semua dan satu per satu)
+   - Tandai item sebagai sudah dibeli dengan fitur pencoretan item
 
-## Installation Instructions
-1. Clone the repository:
-   ```
+### 2. **Organisasi & Filter**
+   - Kelompokkan item berdasarkan alfabet
+   - Filter item berdasarkan status (dibeli/belum dibeli)
+
+### 3. **Tracking & Analitik*
+   - Catat jumlah barang
+   - Kalkulasi banyaknya barang yang telah dibeli/dicoret
+   - Persentase atas barang yang telah dibeli/dicoret
+
+### 4. **Penyimpanan Data**
+   - Data tersimpan secara lokal (Local Storage)
+   - Sinkronisasi otomatis antar session
+   - Backup data yang aman
+
+## 🛠️ Technology Stack
+
+### Frontend
+- **JavaScript (ES6+)** - Logika aplikasi dan interaktivitas
+- **React Js + Vite** - UI Responsive Library
+
+### Tools & Libraries
+- **Local Storage API** - Penyimpanan data lokal
+- **DOM API** - Manipulasi DOM
+- **Modern JavaScript** - Arrow functions, destructuring, async/await
+
+## 🚀 Cara Penggunaan
+
+### Instalasi
+```bash
+1. Clone repository ini
    git clone https://github.com/Mhmd7uLL/catatan-belanja.git
-   ```
-2. Navigate to the project directory:
-   ```
-   cd catatan-belanja
-   ```
-3. Install the dependencies:
-   ```
-   npm install
-   ```
-4. Start the server:
-   ```
-   npm start
-   ```
+
+2. Buka file index.html di browser
+   Double-click index.html atau buka dengan Live Server
 
 ## Contributing
 We welcome contributions to enhance the project. Please submit a pull request or create an issue for any suggestions or bugs.
