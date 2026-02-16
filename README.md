@@ -1,16 +1,41 @@
-# React + Vite
+# Catatan Belanja
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This project is designed to help users manage their shopping lists efficiently. It allows users to add, edit, delete, and view their shopping items in a user-friendly interface.
 
-Currently, two official plugins are available:
+## Features
+- **User Authentication:** Users can register and log in to manage their personal shopping lists.
+- **Add Shopping Items:** Users can easily add items to their shopping list with details like name, quantity, and price.
+- **Edit Items:** Users can modify existing items if their needs change.
+- **Delete Items:** Users can remove items from their shopping list.
+- **View List:** Users can view all items in their shopping list in a clear and organized manner.
+- **Search Functionality:** Users can search for items in their list quickly.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Frameworks and Technologies
+- **Frontend:** Built with React for a responsive UI.
+- **Backend:** Node.js and Express.js for handling API requests.
+- **Database:** MongoDB for storing user and item data.
 
-## React Compiler
+## Installation Instructions
+1. Clone the repository:
+   ```
+   git clone https://github.com/Mhmd7uLL/catatan-belanja.git
+   ```
+2. Navigate to the project directory:
+   ```
+   cd catatan-belanja
+   ```
+3. Install the dependencies:
+   ```
+   npm install
+   ```
+4. Start the server:
+   ```
+   npm start
+   ```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Contributing
+We welcome contributions to enhance the project. Please submit a pull request or create an issue for any suggestions or bugs.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## License
+This project is licensed under the MIT License.
