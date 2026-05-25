@@ -16,9 +16,9 @@ Aplikasi web untuk mencatat dan mengelola daftar belanja Anda dengan antarmuka y
 - 📱 Akses dari berbagai perangkat dengan desain responsif
 
 Aplikasi ini dibangun dengan teknologi modern:
-- **Frontend**: JavaScript (74.5%), HTML (3.1%), CSS (22.4%)
-- **Backend**: Node.js/Express (untuk API)
-- **Database**: Disesuaikan dengan konfigurasi lokal Anda
+- **Frontend**: JavaScript dengan Framework library React.JS
+- **Backend**: Node.js dengan framework Express.JS (untuk API)
+- **Database**: Array lokal JavaScript di file **backend/src/db/groceryItems.js**
 
 ---
 
@@ -26,50 +26,32 @@ Aplikasi ini dibangun dengan teknologi modern:
 
 ```
 catatan-belanja/
-├── frontend/                      # Direktori aplikasi Frontend
-│   ├── index.html                 # File HTML utama
-│   ├── css/                       # Folder stylesheet
-│   │   └── style.css              # Styling aplikasi
-│   ├── js/                        # Folder JavaScript
-│   │   ├── app.js                 # File utama aplikasi
-│   │   ├── api.js                 # Helper untuk API calls
-│   │   └── utils.js               # Fungsi utility
-│   └── assets/                    # Folder aset (gambar, font, dll)
+├── frontend/                      # Direktori aplikasi Frontend                
+│   ├── public/                    # Folder stylesheet
+│   ├── src/                       # Folder JavaScript
+│   │   ├── assets/                # File utama aplikasi
+│   │   ├── components/            # File Komponen UI React
+|   |   ├── App.jsx                # File utama aplikasi
+│   │   ├── index.css              # Style Utama
+│   │   └── main.jsx               # Render UI Utama
+│   ├── eslint.config.js          
+│   ├── index.html                 # HTML utama
+│   ├── package-lock.json          
+│   ├── package.json               # Dependencies React
+│   └── vite.config.js              
 │
-├── backend/                       # Direktori aplikasi Backend
-│   ├── server.js                  # File server utama
-│   ├── config/                    # Konfigurasi aplikasi
-│   ├── routes/                    # Route/endpoint API
-│   ├── controllers/               # Controller logic
-│   ├── models/                    # Model database
-│   ├── middleware/                # Custom middleware
+├── backend/                       # Direktori aplikasi Backend                  
+│   ├── src/                       
+│   |   ├── controllers/           # logika sistem
+│   |   ├── db/                    # Database array sederhana dengan file JS
+│   |   ├── routes/                # Rute endpoint
+│   |   └── server.js              # File server utama
+|   ├── package-lock.json          
 │   └── package.json               # Dependencies Backend
 │
 ├── README.md                      # File dokumentasi ini
-├── .gitignore                     # File untuk mengabaikan file tertentu
-└── package.json                   # Dependencies Frontend (jika menggunakan bundler)
+└── .gitignore                     # File untuk mengabaikan file tertentu
 ```
-
-**Penjelasan Struktur:**
-- **frontend/**: Berisi semua file yang berjalan di browser pengguna (HTML, CSS, JavaScript)
-- **backend/**: Berisi server API yang menangani logika bisnis dan database
-- **css/**: Stylesheet untuk styling aplikasi
-- **js/**: Logika JavaScript untuk interaktivitas
-- **routes/**: Definisi endpoint API (GET, POST, PUT, DELETE)
-- **controllers/**: Fungsi yang menangani request dari client
-- **models/**: Struktur data dan interaksi dengan database
-
----
-
-## 🚀 Cara Kontribusi
-
-### Prerequisites (Prasyarat)
-Pastikan Anda telah menginstall:
-- **Node.js** (v14 atau lebih baru) - [Download](https://nodejs.org/)
-- **Git** - [Download](https://git-scm.com/)
-- **npm** (biasanya sudah terinstall dengan Node.js)
-
----
 
 ### 1️⃣ Clone Repository
 
@@ -83,17 +65,18 @@ cd catatan-belanja
 
 ---
 
-### 2️⃣ Setup & Jalankan Backend Server
+### 2️⃣ Setup & Jalankan Backend
 
 ```bash
-# Masuk ke direktori backend
-cd backend
+# Masuk directory backend
+cd catatan-belanja/backend
 
 # Install dependencies
 npm install
 
 # Jalankan backend server
 npm start
+
 # atau jika menggunakan nodemon:
 npm run dev
 
@@ -106,14 +89,13 @@ npm run dev
 
 ```bash
 # Buka terminal baru, masuk ke direktori project root
-cd catatan-belanja
-
-# Masuk ke direktori frontend
-cd frontend
+cd catatan-belanja/frontend
 
 # Jika menggunakan bundler (webpack, vite, dll):
 npm install
 npm run dev
+
+# Frontend berjalan di: http://localhost:5173
 
 # Jika tanpa bundler:
 # Cukup buka file index.html dengan live server atau server sederhana
