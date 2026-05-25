@@ -12,12 +12,13 @@ Aplikasi web untuk mencatat dan mengelola daftar belanja Anda dengan antarmuka y
 - Mengedit item yang sudah ada
 - Menghapus item dari daftar
 - Menandai item sebagai selesai/dibeli
+- Penyimpanan sederhana berupa Array
 - Sorting/Filter list berdasarkan waktu input, checklist dan urutan alfabet
 
 Aplikasi ini dibangun dengan teknologi modern:
 - **Frontend**: JavaScript dengan Framework library React.JS
 - **Backend**: Node.js dengan framework Express.JS (untuk API)
-- **Database**: Array lokal JavaScript di file **backend/src/db/groceryItems.js**
+- **Database**: Array sementara JavaScript di file **backend/src/db/groceryItems.js**
 
 ---
 
@@ -25,6 +26,15 @@ Aplikasi ini dibangun dengan teknologi modern:
 
 ```
 catatan-belanja/
+├── backend/                       # Direktori aplikasi Backend                  
+│   ├── src/                       
+│   |   ├── controllers/           # logika sistem
+│   |   ├── db/                    # Penyimpanan sederhana dan temporary berupa Array
+│   |   ├── routes/                # Rute endpoint
+│   |   └── server.js              # File server utama
+|   ├── package-lock.json          
+│   └── package.json               # Dependencies Backend
+|
 ├── frontend/                      # Direktori aplikasi Frontend                
 │   ├── public/                    
 │   ├── src/                       # Folder JavaScript
@@ -38,15 +48,6 @@ catatan-belanja/
 │   ├── package-lock.json          
 │   ├── package.json               # Dependencies React
 │   └── vite.config.js              
-│
-├── backend/                       # Direktori aplikasi Backend                  
-│   ├── src/                       
-│   |   ├── controllers/           # logika sistem
-│   |   ├── db/                    # Database array sederhana dengan file JS
-│   |   ├── routes/                # Rute endpoint
-│   |   └── server.js              # File server utama
-|   ├── package-lock.json          
-│   └── package.json               # Dependencies Backend
 ├── README.md                      # File dokumentasi ini
 └── .gitignore                     # File untuk mengabaikan file tertentu
 ```
