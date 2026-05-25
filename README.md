@@ -107,16 +107,6 @@ python -m http.server 8000
 
 ---
 
-### 4️⃣ Konfigurasi API Endpoint (Jika Diperlukan)
-
-Edit file `frontend/js/api.js` atau `frontend/js/app.js` untuk memastikan endpoint API mengarah ke backend yang benar:
-
-```javascript
-const API_BASE_URL = 'http://localhost:5000/api';
-```
-
----
-
 ### 5️⃣ Mulai Berkontribusi
 
 1. **Buat branch baru untuk fitur/fix Anda:**
@@ -157,12 +147,6 @@ Jika Anda mengalami masalah:
 2. Pastikan semua dependencies sudah terinstall dengan `npm install`
 3. Hapus folder `node_modules` dan `package-lock.json`, kemudian install ulang jika ada masalah
 4. Buka issue di GitHub repository
-
----
-
-## 📄 Lisensi
-
-Project ini tersedia di bawah lisensi MIT. Silakan gunakan dan modifikasi sesuai kebutuhan Anda.
 
 ---
 
