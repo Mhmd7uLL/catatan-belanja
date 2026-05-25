@@ -9,7 +9,6 @@ Aplikasi web untuk mencatat dan mengelola daftar belanja Anda dengan antarmuka y
 **Catatan Belanja** adalah aplikasi web yang dirancang untuk membantu Anda mengelola daftar belanja dengan mudah. Aplikasi ini memungkinkan Anda untuk:
 
 - Menambahkan item belanja baru
-- Mengedit item yang sudah ada
 - Menghapus item dari daftar
 - Menandai item sebagai selesai/dibeli
 - Penyimpanan sederhana berupa Array
