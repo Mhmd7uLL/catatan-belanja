@@ -1,6 +1,6 @@
 # Catatan Belanja 📝🛒
 
-Aplikasi web untuk mencatat dan mengelola daftar belanja Anda dengan antarmuka yang sederhana dan responsif.
+Aplikasi web untuk mencatat dan mengelola daftar belanja Anda dengan antarmuka yang sederhana.
 
 ---
 
@@ -8,12 +8,11 @@ Aplikasi web untuk mencatat dan mengelola daftar belanja Anda dengan antarmuka y
 
 **Catatan Belanja** adalah aplikasi web yang dirancang untuk membantu Anda mengelola daftar belanja dengan mudah. Aplikasi ini memungkinkan Anda untuk:
 
-- ➕ Menambahkan item belanja baru
-- ✏️ Mengedit item yang sudah ada
-- ❌ Menghapus item dari daftar
-- ✓ Menandai item sebagai selesai/dibeli
-- 💾 Menyimpan daftar belanja (persistent storage)
-- 📱 Akses dari berbagai perangkat dengan desain responsif
+- Menambahkan item belanja baru
+- Mengedit item yang sudah ada
+- Menghapus item dari daftar
+- Menandai item sebagai selesai/dibeli
+- Sorting/Filter list berdasarkan waktu input, checklist dan urutan alfabet
 
 Aplikasi ini dibangun dengan teknologi modern:
 - **Frontend**: JavaScript dengan Framework library React.JS
@@ -27,7 +26,7 @@ Aplikasi ini dibangun dengan teknologi modern:
 ```
 catatan-belanja/
 ├── frontend/                      # Direktori aplikasi Frontend                
-│   ├── public/                    # Folder stylesheet
+│   ├── public/                    
 │   ├── src/                       # Folder JavaScript
 │   │   ├── assets/                # File utama aplikasi
 │   │   ├── components/            # File Komponen UI React
@@ -48,7 +47,6 @@ catatan-belanja/
 │   |   └── server.js              # File server utama
 |   ├── package-lock.json          
 │   └── package.json               # Dependencies Backend
-│
 ├── README.md                      # File dokumentasi ini
 └── .gitignore                     # File untuk mengabaikan file tertentu
 ```
