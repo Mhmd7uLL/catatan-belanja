@@ -139,14 +139,4 @@ python -m http.server 8000
 
 ---
 
-## 📞 Butuh Bantuan?
-
-Jika Anda mengalami masalah:
-1. Periksa terminal untuk error message
-2. Pastikan semua dependencies sudah terinstall dengan `npm install`
-3. Hapus folder `node_modules` dan `package-lock.json`, kemudian install ulang jika ada masalah
-4. Buka issue di GitHub repository
-
----
-
-**Happy Coding! 🎉** Terima kasih sudah berkontribusi pada Catatan Belanja!
+**Happy Coding! 🎉**
