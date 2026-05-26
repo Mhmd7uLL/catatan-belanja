@@ -29,7 +29,7 @@ catatan-belanja/
 │   ├── src/                       
 │   |   ├── controllers/           # logika sistem
 │   |   ├── db/                    # Penyimpanan sederhana dan temporary berupa Array
-│   |   ├── routes/                # Rute endpoint
+│   |   ├── routes/                # Rute/endpoint API
 │   |   └── server.js              # File server utama
 |   ├── package-lock.json          
 │   └── package.json               # Dependencies Backend
@@ -37,10 +37,10 @@ catatan-belanja/
 ├── frontend/                      # Direktori aplikasi Frontend                
 │   ├── public/                    
 │   ├── src/                       # Folder JavaScript
-│   │   ├── assets/                # File utama aplikasi
+│   │   ├── assets/                # Folder komponen assets
 │   │   ├── components/            # File Komponen UI React
 |   |   ├── App.jsx                # File utama aplikasi
-│   │   ├── index.css              # Style Utama
+│   │   ├── index.css              
 │   │   └── main.jsx               # Render UI Utama
 │   ├── eslint.config.js          
 │   ├── index.html                 # HTML utama
@@ -51,7 +51,7 @@ catatan-belanja/
 └── .gitignore                     # File untuk mengabaikan file tertentu
 ```
 
-### 1️⃣ Clone Repository
+### Clone Repository
 
 ```bash
 # Clone repository dari GitHub
@@ -63,7 +63,7 @@ cd catatan-belanja
 
 ---
 
-### 2️⃣ Setup & Jalankan Backend
+### Setup & Jalankan Backend
 
 ```bash
 # Masuk directory backend
@@ -83,7 +83,7 @@ npm run dev
 
 ---
 
-### 3️⃣ Setup & Jalankan Frontend Server
+### Setup & Jalankan Frontend Server
 
 ```bash
 # Buka terminal baru, masuk ke direktori project root
@@ -106,7 +106,7 @@ python -m http.server 8000
 
 ---
 
-### 5️⃣ Mulai Berkontribusi
+### Mulai Berkontribusi
 
 1. **Buat branch baru untuk fitur/fix Anda:**
    ```bash
@@ -130,7 +130,7 @@ python -m http.server 8000
 
 ---
 
-## 📝 Catatan Pengembangan
+## 📝 Catatan Tambahan
 
 - Pastikan backend sudah berjalan sebelum menjalankan frontend
 - Gunakan browser developer tools (F12) untuk debugging
