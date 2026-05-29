@@ -11,9 +11,9 @@ const router = express.Router();
 
 router.post('/', addList);
 router.get('/', getList);
-router.delete('/', clearList);
+router.delete('/', clearList);     # Clear list semua
 router.delete('/:id', deleteList);
-router.put('/:id', toggleList);
+router.put('/:id', toggleList);    # Clear list yang dipilih
 
 
 export default router;
