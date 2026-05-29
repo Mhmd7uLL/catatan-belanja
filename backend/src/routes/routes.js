@@ -12,8 +12,7 @@ const router = express.Router();
 router.post('/', addList);
 router.get('/', getList);
 router.delete('/', clearList);     //Clear list semua
-router.delete('/:id', deleteList);
-router.put('/:id', toggleList);    //Clear list yang dipilih
-
+router.delete('/:id', deleteList); //Clear list yang dipilih
+router.put('/:id', toggleList);    
 
 export default router;
