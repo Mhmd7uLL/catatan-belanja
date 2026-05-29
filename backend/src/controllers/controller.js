@@ -19,7 +19,7 @@ export const addList = (req, res) => {
     groceryItems.push(newItems);
 
     return res.status(201).json({
-        status: 'status',
+        status: 'success',
         data: newItems
     });
 };
