@@ -5,7 +5,7 @@ import {
     deleteList,
     toggleList,
     clearList,
-} from '../controllers/controller.js'
+} from '../controllers/notesController.js'
 
 const router = express.Router();
 
