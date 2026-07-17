@@ -1,6 +1,6 @@
 # Catatan Belanja 📝🛒
 
-Web sederhana untuk mencatat dan mengelola daftar belanja  dengan antarmuka yang sederhana pula.
+Projek Fullstack sederhan untuk mencatat dan mengelola daftar belanja.
 
 ---
 
