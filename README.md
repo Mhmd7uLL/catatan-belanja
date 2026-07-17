@@ -11,13 +11,14 @@ Aplikasi web untuk mencatat dan mengelola daftar belanja Anda dengan antarmuka y
 - Menambahkan item belanja baru
 - Menghapus item dari daftar berdasarkan item yang dipilih dan seluruh item
 - Menandai item sebagai selesai/dibeli
-- Penyimpanan sederhana berupa Array
 - Sorting/Filter list berdasarkan waktu input, checklist dan urutan alfabet
+- Penyimpanan CRUD sederhana berupa database MySQL
 
-Aplikasi ini dibangun dengan teknologi modern:
-- **Frontend**: JavaScript dengan Framework library React.JS
-- **Backend**: Node.js dengan framework Express.JS (untuk API)
-- **Database**: Array sementara JavaScript di file **backend/src/db/groceryItems.js**
+Tech Stacks:
+- **Bahasa** : JavaScript
+- **Frontend**: React.JS
+- **Backend**: Node.js + Express.JS 
+- **Database**: MySQL 
 
 ---
 
@@ -28,7 +29,7 @@ catatan-belanja/
 ├── backend/                       # Direktori aplikasi Backend                  
 │   ├── src/                       
 │   |   ├── controllers/           # logika sistem
-│   |   ├── db/                    # Penyimpanan sederhana dan temporary berupa Array
+│   |   ├── db/                    # koneksi database MysQL
 │   |   ├── routes/                # Rute/endpoint API
 │   |   └── server.js              # File server utama
 |   ├── package-lock.json          
@@ -63,46 +64,78 @@ cd catatan-belanja
 
 ---
 
-### Setup & Jalankan Backend
+
+## Backend Setup
+
+Masuk ke folder backend:
 
 ```bash
-# Masuk directory backend
-cd catatan-belanja/backend
-
-# Install dependencies
-npm install
-
-# Jalankan backend server
-npm start
-
-# atau jika menggunakan nodemon:
-npm run dev
-
-# Backend akan berjalan di: http://localhost:5000 (atau port yang dikonfigurasi)
+cd backend
 ```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Jalankan server:
+
+```bash
+npm run dev
+```
+
+Server akan berjalan di:
+
+```txt
+http://localhost:5000
+```
+
+---
+
+## Database Setup
+
+1. Jalankan MySQL menggunakan XAMPP atau Laragon.
+2. Pastikan MySQL berjalan pada port `3306`.
+3. Gunakan konfigurasi berikut:
+
+```js
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_USER=root
+DB_PASSWORD=
+DB_NAME=catatan_belanja
+```
+
+> Database dan tabel akan dibuat secara otomatis saat backend dijalankan.
 
 ---
 
 ### Setup & Jalankan Frontend Server
 
+Buka terminal baru, masuk ke direktori project root
 ```bash
-# Buka terminal baru, masuk ke direktori project root
 cd catatan-belanja/frontend
+```
 
-# Jika menggunakan bundler (webpack, vite, dll):
+Jika menggunakan bundler (webpack, vite, dll):
+```bash
 npm install
 npm run dev
+```
 
-# Frontend berjalan di: http://localhost:5173
+> Frontend berjalan di: http://localhost:5173
 
-# Jika tanpa bundler:
+Jika tanpa bundler:
+
+```bash
 # Cukup buka file index.html dengan live server atau server sederhana
 # Opsi 1: Menggunakan Live Server (VS Code extension)
 # Opsi 2: Menggunakan Python (jika tersedia)
 python -m http.server 8000
-
-# Frontend dapat diakses di: http://localhost:3000 atau http://localhost:8000
 ```
+
+> Frontend dapat diakses di: http://localhost:3000 atau http://localhost:8000
 
 ---
 
@@ -138,5 +171,3 @@ python -m http.server 8000
 - Pastikan CORS sudah dikonfigurasi dengan benar di backend jika frontend dan backend berjalan di port berbeda
 
 ---
-
-**Happy Coding! 🎉**
