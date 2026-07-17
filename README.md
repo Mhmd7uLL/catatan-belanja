@@ -1,6 +1,6 @@
 # Catatan Belanja 📝🛒
 
-Projek Fullstack sederhan untuk mencatat dan mengelola daftar belanja.
+Projek Fullstack sederhana untuk mencatat dan mengelola daftar belanja.
 
 ---
 
