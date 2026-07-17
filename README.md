@@ -15,9 +15,9 @@ Projek Fullstack sederhana untuk mencatat dan mengelola daftar belanja.
 - Penyimpanan CRUD sederhana berupa database MySQL
 
 Tech Stacks:
-- **Bahasa** : JavaScript
+- **Bahasa**   : JavaScript
 - **Frontend** : React.JS
-- **Backend** : Node.js + Express.JS 
+- **Backend**  : Node.Js + Express.Js 
 - **Database** : MySQL 
 
 ---
