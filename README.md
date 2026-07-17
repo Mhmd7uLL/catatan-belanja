@@ -1,6 +1,6 @@
 # Catatan Belanja 📝🛒
 
-Aplikasi web untuk mencatat dan mengelola daftar belanja Anda dengan antarmuka yang sederhana.
+Web sederhana untuk mencatat dan mengelola daftar belanja  dengan antarmuka yang sederhana pula.
 
 ---
 
@@ -16,9 +16,9 @@ Aplikasi web untuk mencatat dan mengelola daftar belanja Anda dengan antarmuka y
 
 Tech Stacks:
 - **Bahasa** : JavaScript
-- **Frontend**: React.JS
-- **Backend**: Node.js + Express.JS 
-- **Database**: MySQL 
+- **Frontend** : React.JS
+- **Backend** : Node.js + Express.JS 
+- **Database** : MySQL 
 
 ---
 
@@ -64,8 +64,26 @@ cd catatan-belanja
 
 ---
 
+## Database Setup
 
-## Backend Setup
+1. Jalankan MySQL menggunakan XAMPP atau Laragon.
+2. Pastikan MySQL berjalan pada port `3306`.
+3. Gunakan konfigurasi berikut:
+
+```js
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_USER=root
+DB_PASSWORD=
+DB_NAME=catatan_belanja
+```
+
+> Database dan tabel akan dibuat secara otomatis saat backend dijalankan.
+
+---
+
+
+## Setup Backend
 
 Masuk ke folder backend:
 
@@ -93,25 +111,7 @@ http://localhost:5000
 
 ---
 
-## Database Setup
-
-1. Jalankan MySQL menggunakan XAMPP atau Laragon.
-2. Pastikan MySQL berjalan pada port `3306`.
-3. Gunakan konfigurasi berikut:
-
-```js
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_USER=root
-DB_PASSWORD=
-DB_NAME=catatan_belanja
-```
-
-> Database dan tabel akan dibuat secara otomatis saat backend dijalankan.
-
----
-
-### Setup & Jalankan Frontend Server
+## Setup Frontend 
 
 Buka terminal baru, masuk ke direktori project root
 ```bash
